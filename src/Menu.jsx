@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi";
+import anarchy from "./assets/anarchy.svg";
 
 export default function Menu({ menuActive, toggleMenu }) {
   return (
@@ -13,7 +14,7 @@ export default function Menu({ menuActive, toggleMenu }) {
         )}
       </button>
       <img
-        src="./src/assets/anarchy.svg"
+        src={anarchy}
         alt=""
         className="h-8 top-4 right-4 absolute z-[1000] bg-accent"
       />
