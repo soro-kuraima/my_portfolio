@@ -6,15 +6,46 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Telecom Churn Analysis',
-      description: 'Built an end to end Power BI dashboard for telco-customer churn Rate after performing EDA',
+      title: 'Spacey',
+      description: 'Solution to space tourism website challenge',
+      repo_link: 'https://github.com/kn-oz/Spacey',
+      live_link: 'https://kn-oz.github.io/Spacey/',
     },
     {
       id: 2,
-      title: 'Amazon Sales Analysis',
-      description: 'Analyze the raw data from amazon to generate sales and business insight',
+      title: 'birdie',
+      description: 'twitter like social app UI',
+      repo_link: 'https://github.com/kn-oz/birdie',
+      live_link: 'https://kn-oz.github.io/birdie/',
     },
-    
+    {
+      id: 3,
+      title: 'chat.io',
+      description: 'A real time private chat app using firebase',
+      repo_link: 'https://github.com/kn-oz/chat.io',
+      live_link: 'https://kn-oz.github.io/chat.io/',
+    },
+    {
+      id: 4,
+      title: 'Tetris',
+      description: 'classic game using vanilla javascript',
+      repo_link: 'https://github.com/kn-oz/tetris',
+      live_link: 'https://kn-oz.github.io/tetris/',
+    },
+    {
+      id: 5,
+      title: 'storeX',
+      description: 'an ecommerce app Ui with stripe integration',
+      repo_link: '',
+      live_link: '',
+    },
+    {
+      id: 6,
+      title: 'zen_sama',
+      description: 'to help you find your lost zen in life',
+      repo_link: 'https://github.com/kn-oz/zen_sama',
+      live_link: '',
+    },
   ];
 
   return (
@@ -29,7 +60,7 @@ export default function Projects() {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, title, description, repo_link, live_link }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <div className=" p-6 rounded-md duration-200 hover:scale-105">
@@ -41,12 +72,12 @@ export default function Projects() {
                 </h2>
               </div>
               <div className="flex items-center justify-center">
-                <p className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  {}
-                </p>
-                <p href={repo_link} target='_blank' className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  {}
-                </p>
+                <a href={live_link} target='_blank' className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Demo
+                </a>
+                <a href={repo_link} target='_blank' className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </a>
               </div>
             </div>
           ))}

@@ -1,44 +1,52 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import awsS3 from './assets/aws-s3-logo-svgrepo-com.svg'
-import sql from './assets/database.png'
-import excel from './assets/icons8-microsoft-excel.svg'
-import powerBI from './assets/icons8-power-bi (1).svg'
-import snowflake from './assets/snowflake-svgrepo-com.svg'
+import html from './assets/html.png'
+import css from './assets/css.png'
+import javascript from './assets/javascript.png'
+import reactImage from './assets/react.png'
+import tailwind from './assets/tailwind.png'
+import github from './assets/github.png'
+import space from './assets/space.svg'
 
 export default function Skills() {
     const techs = [
         {
           id: 1,
-          src: excel,
-          title: "M S Excel",
+          src: html,
+          title: "HTML",
           style: "shadow-orange-500",
         },
         {
           id: 2,
-          src: sql,
-          title: "SQL",
+          src: css,
+          title: "CSS",
           style: "shadow-blue-500",
         },
         {
           id: 3,
-          src: powerBI,
-          title: "Power BI",
+          src: javascript,
+          title: "JavaScript",
           style: "shadow-yellow-500",
         },
         {
           id: 4,
-          src: awsS3,
-          title: "AWS S3",
+          src: reactImage,
+          title: "React",
           style: "shadow-blue-600",
         },
         {
           id: 5,
-          src: snowflake,
-          title: "Snowflake",
+          src: tailwind,
+          title: "Tailwind",
           style: "shadow-sky-400",
         }, 
+        {
+          id: 6,
+          src: github,
+          title: "GitHub",
+          style: "shadow-gray-400",
+        },
       ];
 
   return (

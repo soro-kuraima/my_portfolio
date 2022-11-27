@@ -14,11 +14,11 @@ export default function Hero({ menuActive, toggleMenu }) {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Data Analyst",
-    "Business Analyst",
-    "Power Bi Developer",
+    "Website Developer",
+    "Front End Developer",
+    "Nodejs Developer",
   ];
-  const period = 300;
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -51,7 +51,7 @@ export default function Hero({ menuActive, toggleMenu }) {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(300);
+      setDelta(500);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
@@ -76,17 +76,19 @@ export default function Hero({ menuActive, toggleMenu }) {
                   Welcome to my Portfolio
                 </span>
                 <h1 className="mt-5 text-6xl tracking-widest text-white font-bold">
-                  {`Hi! I'm Shivam. I'm a `}{" "}
+                  {`Hi! I'm Abhishek. I'm a `}{" "}
                   <span
                     className="txt-rotate"
                     dataPeriod="1000"
-                    data-rotate='[ "Data Analyst", "Business Scientist", "Power Bi Developer" ]'
+                    data-rotate='[ "Website Developer", "Front End Developer", "Nodejs Developer" ]'
                   >
                     <span className="">{text}</span>
                   </span>
                 </h1>
                 <p className="text-lg text-white tracking-widest">
-                 Hi, I'm proficient in advanced excel, SQL and python. I'm experienced in understanding raw data and converting it into presentable visuals.
+                  Hi, I'm a javascript developer. I follow good coding practices
+                  with naming and convention as much as possible. I like to make
+                  sure that code both works and is readable and maintainable.
                 </p>
                 <a href="#contact" className="text-white text-xl font-bold">
                   Hire Me
