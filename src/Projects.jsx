@@ -32,20 +32,6 @@ export default function Projects() {
       repo_link: 'https://github.com/kn-oz/tetris',
       live_link: 'https://kn-oz.github.io/tetris/',
     },
-    {
-      id: 5,
-      title: 'storeX',
-      description: 'an ecommerce app Ui with stripe integration',
-      repo_link: '',
-      live_link: '',
-    },
-    {
-      id: 6,
-      title: 'zen_sama',
-      description: 'to help you find your lost zen in life',
-      repo_link: 'https://github.com/kn-oz/zen_sama',
-      live_link: '',
-    },
   ];
 
   return (
