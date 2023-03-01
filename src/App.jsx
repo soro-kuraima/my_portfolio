@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="App min-h-screen bg-neutral">
-      <Menu menuActive={menuActive} toggleMenu={toggleMenu}/>
-      <Hero menuActive={menuActive} toggleMenu={toggleMenu}/>
+      <Menu menuActive={menuActive} toggleMenu={toggleMenu} />
+      <Hero menuActive={menuActive} toggleMenu={toggleMenu} />
       <Skills />
       <Projects />
       <Contact />
