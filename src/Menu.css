@@ -65,12 +65,12 @@
     z-index: 0;
   }
   
-  #menu-items:hover ~ #menu-background-pattern {
+  #menu-items:hover ~ #menu-background-pattern, #menu-items:active ~ #menu-background-pattern, #menu-items:focus ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
   }
   
-  #menu-items:hover ~ #menu-background-image {
+  #menu-items:hover ~ #menu-background-image, #menu-items:active ~ #menu-background-image, #menu-items:focus ~ #menu-background-image {
     scale: 0.9;
     transition: 800ms ease;
     opacity: 0.1;
