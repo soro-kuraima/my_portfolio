@@ -66,7 +66,7 @@ export default function Skills() {
   ]
 
   return (
-    <div className="skills p- min-h-max" id="skills">
+    <div className="min-h-max bg-gradient-to-r from-violet-600 to-fuchsia-400" id="skills">
       <div name="experience" className="w-full h-full">
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
           <div className="flex flex-col items-center">

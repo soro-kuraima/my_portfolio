@@ -27,29 +27,61 @@ export default function Contact() {
     })
       .then((response) => {
         if (response.ok) {
-          toast.custom((t) => (<div className="alert alert-success shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            <span>Message Sent successfully</span>
-          </div>
-        </div>),
-        {id: 'success-notification'});
+          toast.custom(
+            (t) => (
+              <div className="alert alert-success shadow-lg">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-current flex-shrink-0 h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Message Sent successfully</span>
+                </div>
+              </div>
+            ),
+            { id: "success-notification" }
+          );
         } else {
-          toast.custom((t) => (<div className="alert alert-error shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
-            <span>Something went wrong! try again</span>
-          </div>
-        </div>),
-        {id: 'error-notification'});
+          toast.custom(
+            (t) => (
+              <div className="alert alert-error shadow-lg">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-current flex-shrink-0 h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                  <span>Something went wrong! try again</span>
+                </div>
+              </div>
+            ),
+            { id: "error-notification" }
+          );
         }
       })
       .catch((error) => console.log(error));
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
   }
 
   return (
@@ -121,7 +153,7 @@ export default function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="mt-8 ml-2 font-bold py-3 px-8 bg-white text-xl text-black hover:bg-black hover:text-white"
+              className="mt-8 ml-2 font-bold py-3 px-8 bg-white text-xl text-black hover:bg-black hover:text-white "
             >
               Send
             </button>

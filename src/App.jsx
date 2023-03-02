@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className="App min-h-screen bg-neutral">
+    <div className="App min-h-screen bg-neutral relative">
       <Menu menuActive={menuActive} toggleMenu={toggleMenu} />
       <Hero menuActive={menuActive} toggleMenu={toggleMenu} />
       <Skills />

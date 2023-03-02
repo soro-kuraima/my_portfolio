@@ -19,7 +19,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "a social cum dating upp",
+      title: "a social cum dating app",
       description:
         "A social app to find and meet new people and chat with them",
       repo_link: "https://github.com/kn-oz/inSync",
@@ -51,8 +51,8 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="bg-black w-full text-white md:h-screen pt-4"
-      style={{ backgroundImage: `url(${space_blue})` }}
+      className="bg-gradient-to-r from-fuchsia-400 to-violet-600 w-full text-white md:h-screen pt-4"
+      
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 flex flex-col items-center">

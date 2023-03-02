@@ -14,9 +14,9 @@ export default function Hero({ menuActive, toggleMenu }) {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Website Developer",
+    "Web Developer",
     "Front End Developer",
-    "Nodejs Developer",
+    "Node Developer",
   ];
   const period = 2000;
 
