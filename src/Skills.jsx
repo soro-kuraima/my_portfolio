@@ -63,11 +63,11 @@ export default function Skills() {
       title: "Vite",
       style: "shadow-purple-500"
     }
-  ];
+  ]
 
   return (
-    <div className="skills mb-4" id="skills">
-      <div name="experience" className="bg-neutral-focus w-full h-screen">
+    <div className="skills p- min-h-max" id="skills">
+      <div name="experience" className="w-full h-full">
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
           <div className="flex flex-col items-center">
             <p className="text-4xl font-bold text-center p-2 inline">Skills</p>
